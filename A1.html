@@ -1,0 +1,380 @@
+<html>
+		<!-- 
+		Christopher Richards 
+		4048398
+		-->
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- BootStrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Assignment 1 </title>
+	<style>
+        /* Styles for Task 1 */
+        h1 {
+            color:darkblue;
+            font-weight: bold;
+        }
+        .pageHeader {
+            background-color: cadetblue;
+            text-align: center;
+            padding:5px
+        }
+        .dateStyle {
+            color:rgb(60, 60, 60);
+            font-style: italic;
+        }
+
+        /* Styles for Task 2 */
+        #task2Table {
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        #task2Table th {
+            font-size: larger;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            background-color: purple;
+            padding:5px;
+        }
+        
+        #task2Table td {
+            font-size:medium;
+            color:indigo;
+            font-weight: thin;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: dotted grey;
+            border-collapse: collapse;
+        }
+
+        /* these only add rounded corners to the table's corner elements */
+        #task2Table th:first-of-type {
+        border-top-left-radius: 10px;
+        }
+        #task2Table th:last-of-type {
+        border-top-right-radius: 10px;
+        }
+        #task2Table tr:last-of-type td:first-of-type {
+        border-bottom-left-radius: 10px;
+        }
+        #task2Table tr:last-of-type td:last-of-type {
+        border-bottom-right-radius: 10px;
+        }
+
+        #task2Table .evenRow {
+            background-color: white;
+            border-color: grey;
+            border-width: 1px;
+            border-style: solid;
+        }
+        #task2Table .oddRow{
+            background-color:lightblue;
+            border-color: grey;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .task2Area {
+            background-image:radial-gradient(rgb(235, 157, 255), white);
+            text-align: center;
+        }
+        .censusDate {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Styles for Task 3 */
+        #task3Table {
+            border-collapse: separate;
+        }
+        #task3Table th {
+            font-size: x-large;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            background-color: green;
+            padding:5px;
+        }
+        
+        #task3Table td {
+            font-size:medium;
+            color:black;
+            background-color: white;
+            font-weight: thin;
+            padding: 5px;
+            border: dashed black 1px;
+        }
+        .fruitCol {
+            align-items: center;
+            text-align: center;
+        }
+        .fruitImg {
+            width: 100px;
+            border-radius: 20px;
+            border: yellow solid;
+            border-width: 1px;
+        }
+        .task3Area {
+            background-image:linear-gradient( white,rgb(157, 255, 177));
+            text-align: center;
+        }
+
+        /* Styles for Task 4 */
+
+        .task4Area {
+            background-color:lightslategrey;
+            text-align: center;
+        }
+
+        .animalImg {
+            width: 150px;
+            border: black 1px solid;
+        }
+
+        /* Styles for Task 5 */
+
+        .task5Area {
+            background-color:rgb(213, 188, 255);
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        // JS for Task 4 
+        function dog(){   // get the element   
+            document.getElementById("displaySpanAnimal").innerHTML = "Dog is Clicked";   // show dog message   
+            
+            document.getElementById("displayTxtAnimal").value = "User clicks dog."; //show dog text
+
+            document.getElementById("displayImgAnimal").src = "dog.png"; //show dog pic
+        }
+
+        function cat(){   // get the element   
+            document.getElementById("displaySpanAnimal").innerHTML = "Cat is Clicked";   // show cat message   
+            
+            document.getElementById("displayTxtAnimal").value = "User clicks cat."; //show cat text
+
+            document.getElementById("displayImgAnimal").src = "cat.png"; //show cat pic
+        }
+
+        function frog(){   // get the element   
+            document.getElementById("displaySpanAnimal").innerHTML = "Frog is Clicked";   // show frog message   
+            
+            document.getElementById("displayTxtAnimal").value = "User clicks Frog."; //show frog text
+
+            document.getElementById("displayImgAnimal").src = "frog.png"; //show frog pic
+        }
+    </script>
+</head>
+<body>
+    <!-- TASK 1 -->
+    <div class="pageHeader">
+        <h2>Task 1</h2>
+        <h1>4048398 Christopher Richards</h1>
+        <h2>COMP804: Web Security</h2>
+        <h3>Assignment 1, due on the end of Week 5 <span class="dateStyle">(6/3/2023)</span></h3>
+    </div>
+    <hr/>
+
+    <!-- TASK 2 -->
+    <div class="task2Area">
+        <br/>
+        <h2>Task 2</h2>
+        <br/>
+        <table id="task2Table" align="center">
+            <tr>
+                <th>Activity</th>
+                <th>Date</th>
+            </tr>
+            <tr class="oddRow">
+                <td>First day to enrol for continuing students</td>
+                <td>22 Nov 2021</td>
+            </tr>
+            <tr class="evenRow">
+                <td>Orientation</td>
+                <td>
+                    During the week of 18 July 2022 <br/><br/>
+                    Visit <a href=#>orientation page</a> for more info
+                </td>
+            </tr>
+            <tr class="oddRow">
+                <td>Lectures Commence</td>
+                <td>
+                    25 July - 23 Sept 2022
+                </td>
+            </tr>
+            <tr class="evenRow">
+                <td>Last day to enrol/add subjects yourself</td>
+                <td>
+                    5 Aug   
+                </td>
+            </tr>
+            <tr class="oddRow">
+                <td>
+                    <span class="censusDate">Census Date</span>
+                    <ul>
+                        <li>Fees due</li>
+                        <li>Last day to withdraw without paying for subjects</li>
+                        <li>HECS/FEE HELP reporting date</li>
+                        <li>Last day to change HECS billing option</li>
+                    </ul>
+                    <a href="#">Learn more about Census date &gt;</a>
+
+                </td>
+                <td>
+                    31 Aug
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+    <hr/>
+
+    <!-- TASK 3 -->
+    <div class="task3Area">
+        <br/>
+        <h2>Task 3</h2>
+        <br/>
+        <table id="task3Table" align="center">
+            <tr>
+                <th>Name</th>
+                <th>Health Benefit</th>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Banana <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/1280px-Bananas_white_background_DS.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Excellent source of Potassium <br/>
+                    <a href="https://en.wikipedia.org/wiki/Banana">Link to banana wikipedia</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Apple <br/>
+                    <image src="https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2018/10/apple-2711629_1920-1024x768.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    High in fibre!<br/>
+                    <a href="https://www.hsph.harvard.edu/nutritionsource/food-features/apples/">Link to Harvad source</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Kiwi Fruit<br/>
+                    <image src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Raw kiwis are high in vitamins C and K<br/>
+                    <a href="https://www.britannica.com/plant/kiwi-fruit">Link to britannica</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Dragon Fruit <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/4/43/Pitaya_cross_section_ed2.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Excellent source of vitamin D<br/>
+                    <a href="https://www.healthline.com/nutrition/dragon-fruit">Link to HealthLine</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Coconut <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cocos_nucifera_%28coconut%29_2_%2839384972311%29.jpg/330px-Cocos_nucifera_%28coconut%29_2_%2839384972311%29.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Valuable water source<br/>
+                    <a href="https://en.wikipedia.org/wiki/Coconut">Link to Wikipedia</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Tomato <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Actually a fruit! High in antioxidants.<br/>
+                    <a href="https://en.wikipedia.org/wiki/Tomato">Link to Wikipedia source</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Pear <br/>
+                    <image src="https://australianpears.com.au/wp-content/uploads/2019/11/PackhamsTriumph_800px.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    As you can see, ane xcellent source of Vitamin C<br/>
+                    <a href="https://australianpears.com.au/">Link to Australian Pears</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Watermelon <br/>
+                    <image src="https://www.gardeningknowhow.com/wp-content/uploads/2021/05/whole-and-slices-watermelon.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Very few calories.<br/>
+                    <a href="https://www.healthline.com/nutrition/foods/watermelon">Link to Healthline</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Rock melon <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cantaloupes.jpg/330px-Cantaloupes.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Rich in Vitamin C and A <br/>
+                    <a href="https://en.wikipedia.org/wiki/Cantaloupe">Link to Wikipedia</a>
+                </td>
+            </tr>
+            <tr >
+                <td class="fruitCol">
+                    Grape <br/>
+                    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Grapes%2C_Rostov-on-Don%2C_Russia.jpg/1280px-Grapes%2C_Rostov-on-Don%2C_Russia.jpg" class="fruitImg"></image>
+                </td>
+                <td>
+                    Can be used to make wine which has infinite nutrional value<br/>
+                    <a href="https://en.wikipedia.org/wiki/Grape">Link to source</a>
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+    <hr/>
+
+    <!-- Task 4 -->
+    <div  class="task4Area">
+        <br>
+        <h2>Task 4</h2>
+        <br/>
+        <button onClick="cat()">Cat</button>
+        <button onClick="dog()">Dog</button>
+        <button onClick="frog()">Frog</button>
+        <br/><br/>
+        <form><input type="text" id="displayTxtAnimal"></input></form>
+        <br/>
+        <span id="displaySpanAnimal"></span>
+        <br/>
+        <image id="displayImgAnimal" class="animalImg"></image>
+        <br/>
+    </div>
+    <hr/>
+
+    <!-- Task 5 (mostly in pdf)-->
+    <div  class="task5Area">
+        <br>
+        <h2>Task 5</h2>
+        <br/>
+        <a href="task5.pdf">&lt; Link to Task 5 PDF showing Github Steps &gt;</a>
+        <br/>
+
+    </div>
+</body>
